@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favorite Music</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="icon" href="public/images/icon.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="public/images/logo.png">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+<!--Container For Songs-->
+    <div class="container">
+        
+        <div class="songList">
+            <h1>Best of NCS - No Copy Right</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">3:32<i id="0" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">3:05<i id="1" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">2:59<i id="2" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">2:40<i id="3" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">3:27<i id="4" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">3:59<i id="5" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">4:04<i id="6" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">3:28<i id="7" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">2:38<i id="8" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Faded</span>
+                    <span class="songListPlay"><span class="timestamp">3:53<i id="9" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <!--Bottom for Audio Progress Bar-->
+    <div class="bottom">
+        <input type="range" name="range" value="0" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <!--Fontawsome Icons-->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <!--Song Infor GIF-->
+        <div class="songInfo">
+            <img src="public/images/playing.gif" width="42px" id="gif"> <span id="masterSongName">Faded - Alan Walker</span>
+        </div>
+    </div>
+    <!--Script tag for jquery link and Javascript Linked-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+    <!--A Script tag for including the fontawsome icons Library-->
+    <script src="https://kit.fontawesome.com/a848f4d430.js" crossorigin="anonymous"></script>
+</body>
+</html>
